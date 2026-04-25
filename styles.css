@@ -236,14 +236,14 @@ img {
 @media (max-width: 768px) {
     .hero-slide {
         background-size: cover;
-        background-position: center center;
+        background-position: center 40%;
     }
 }
 
 @media (max-width: 480px) {
     .hero-slide {
         background-size: cover;
-        background-position: 30% center;
+        background-position: center 35%;
     }
 }
 
