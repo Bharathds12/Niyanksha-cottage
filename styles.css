@@ -31,6 +31,8 @@ body {
     color: var(--text-dark);
     background: var(--white);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {
@@ -158,6 +160,8 @@ img {
     position: relative;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 
 .book-btn::before {
@@ -956,9 +960,13 @@ img {
         padding: 0 20px;
     }
 
+    .booking-bar {
+        padding: 10px 0;
+    }
+
     .booking-bar-content {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
         text-align: center;
     }
 
@@ -971,49 +979,98 @@ img {
         font-size: 9px;
     }
 
+    .booking-actions {
+        flex-direction: row;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .book-btn {
+        font-size: 0.75rem;
+        padding: 8px 15px;
+        flex: 1;
+    }
+
+    .hero-section {
+        margin-top: 90px;
+        height: 80vh;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+        margin-top: 0;
+    }
+
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-bottom: 30px;
     }
 
     .hero-actions {
         flex-direction: column;
         width: 100%;
+        gap: 15px;
     }
 
     .btn-primary,
     .btn-secondary {
         width: 100%;
+        padding: 14px 30px;
+        font-size: 0.8rem;
+    }
+
+    .section-header-center {
+        margin-bottom: 40px;
     }
 
     .section-header-center h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
     }
 
     .intro-text h2,
     .experience-text h2,
     .location-info-luxury h2 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    .intro-text .lead {
+        font-size: 1rem;
+    }
+
+    .intro-text p {
+        font-size: 0.95rem;
     }
 
     .intro-section,
     .amenities-section,
     .house-rules-section,
     .booking-section {
-        padding: 80px 0;
+        padding: 60px 0;
     }
 
     .experience-text,
     .location-info-luxury {
-        padding: 60px 30px;
+        padding: 40px 20px;
+    }
+
+    .gallery-section {
+        padding: 60px 20px;
     }
 
     .gallery-grid-luxury {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 300px);
+        grid-template-rows: auto;
+        gap: 15px;
     }
 
     .gallery-item-large,
@@ -1021,31 +1078,131 @@ img {
     .gallery-item-small {
         grid-column: span 1;
         grid-row: span 1;
+        height: 250px;
+    }
+
+    .gallery-item-large img,
+    .gallery-item-medium img,
+    .gallery-item-small img {
+        height: 100%;
     }
 
     .amenities-grid-luxury {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .amenity-item {
+        padding: 25px 15px;
+    }
+
+    .amenity-icon {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .amenity-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .amenity-item p {
+        font-size: 0.9rem;
     }
 
     .rules-luxury-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .rule-card-luxury {
+        padding: 20px;
+    }
+
+    .rule-card-luxury h3 {
+        font-size: 1.1rem;
+    }
+
+    .rule-card-luxury p {
+        font-size: 0.9rem;
+    }
+
+    .booking-options-luxury {
+        gap: 25px;
+    }
+
+    .booking-card-header {
+        padding: 30px 25px 20px;
+    }
+
+    .booking-logo img {
+        height: 35px !important;
+    }
+
+    .booking-card-header p {
+        font-size: 0.85rem;
+    }
+
+    .booking-card-content {
+        padding: 25px;
+    }
+
+    .booking-card-content p {
+        font-size: 0.9rem;
+    }
+
+    .location-detail-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .location-detail-item p,
+    .location-detail-item ul li {
+        font-size: 0.9rem;
     }
 
     .footer-content-luxury {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 40px;
+    }
+
+    .footer-brand h3 {
+        font-size: 2rem;
     }
 
     .footer-links {
         grid-template-columns: 1fr;
         gap: 30px;
     }
+
+    .scroll-hint {
+        bottom: 20px;
+    }
+
+    .scroll-hint span {
+        font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 480px) {
+    .booking-bar {
+        padding: 8px 0;
+    }
+
+    .hero-section {
+        margin-top: 85px;
+        height: 75vh;
+    }
+
     .hero-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-location {
+        font-size: 0.75rem;
     }
 
     .amenities-grid-luxury {
@@ -1053,21 +1210,62 @@ img {
     }
 
     .wreath-logo {
-        width: 40px;
-        height: 40px;
+        width: 38px;
+        height: 38px;
     }
 
     .curved-text {
-        font-size: 8px;
-        letter-spacing: 1px;
+        font-size: 7px;
+        letter-spacing: 0.5px;
     }
 
     .booking-actions {
         flex-direction: column;
         width: 100%;
+        gap: 8px;
     }
 
     .book-btn {
         justify-content: center;
+        width: 100%;
+        font-size: 0.7rem;
+        padding: 8px 12px;
+    }
+
+    .section-header-center h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text h2,
+    .experience-text h2,
+    .location-info-luxury h2 {
+        font-size: 1.6rem;
+    }
+
+    .gallery-item-large,
+    .gallery-item-medium,
+    .gallery-item-small {
+        height: 220px;
+    }
+
+    .booking-logo img {
+        height: 30px !important;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 25px;
+        font-size: 0.75rem;
+    }
+
+    .footer-luxury {
+        padding: 60px 0 20px;
+    }
+
+    .intro-section,
+    .amenities-section,
+    .house-rules-section,
+    .booking-section {
+        padding: 50px 0;
     }
 }
