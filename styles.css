@@ -612,6 +612,66 @@ img {
     line-height: 1.7;
 }
 
+/* Testimonials Section */
+.testimonials-section {
+    padding: 120px 0;
+    background: var(--off-white);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 40px 35px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.testimonial-rating {
+    font-size: 1.2rem;
+    color: var(--primary-gold);
+}
+
+.testimonial-text {
+    color: var(--text-dark);
+    font-size: 1rem;
+    line-height: 1.8;
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 20px;
+    border-top: 2px solid var(--primary-gold);
+}
+
+.testimonial-author strong {
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.testimonial-author span {
+    color: var(--text-light);
+    font-size: 0.85rem;
+}
+
 /* House Rules Section */
 .house-rules-section {
     padding: 80px 0;
@@ -956,6 +1016,11 @@ img {
     .rules-luxury-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1058,9 +1123,14 @@ img {
 
     .intro-section,
     .amenities-section,
+    .testimonials-section,
     .house-rules-section,
     .booking-section {
         padding: 60px 0;
+    }
+
+    .testimonial-card {
+        padding: 30px 25px;
     }
 
     .experience-text,
@@ -1274,6 +1344,7 @@ img {
 
     .intro-section,
     .amenities-section,
+    .testimonials-section,
     .house-rules-section,
     .booking-section {
         padding: 50px 0;
