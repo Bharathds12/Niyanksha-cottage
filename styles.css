@@ -457,13 +457,14 @@ img {
 }
 
 .intro-text .lead {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--text-dark);
     margin-bottom: 25px;
     line-height: 1.8;
 }
 
 .intro-text p {
+    font-size: 1rem;
     color: var(--text-light);
     margin-bottom: 20px;
     line-height: 1.8;
