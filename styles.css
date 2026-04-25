@@ -102,66 +102,26 @@ img {
 }
 
 .wreath-logo {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: auto;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
 }
 
 .wreath-logo:hover {
-    transform: scale(1.1) rotate(5deg);
-    filter: drop-shadow(0 4px 8px rgba(201, 169, 97, 0.3));
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(201, 169, 97, 0.4));
 }
 
-.curved-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 1.5px;
+.feather {
+    animation: featherFloat 3s ease-in-out infinite;
 }
 
-.leaves-left,
-.leaves-right {
-    animation: leafSway 3s ease-in-out infinite;
+@keyframes featherFloat {
+    0%, 100% { transform: translate(20px, 40px) rotate(0deg); }
+    50% { transform: translate(20px, 38px) rotate(-2deg); }
 }
 
-.leaves-right {
-    animation-delay: 1.5s;
-}
-
-@keyframes leafSway {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-2px); }
-}
-
-.crown {
-    animation: crownShine 4s ease-in-out infinite;
-}
-
-@keyframes crownShine {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.8; }
-}
-
-.wing-left {
-    animation: wingFlutterLeft 2s ease-in-out infinite;
-    transform-origin: 75px 100px;
-}
-
-.wing-right {
-    animation: wingFlutterRight 2s ease-in-out infinite;
-    transform-origin: 125px 100px;
-}
-
-@keyframes wingFlutterLeft {
-    0%, 100% { transform: translateX(0) scaleX(1); }
-    50% { transform: translateX(-1px) scaleX(1.05); }
-}
-
-@keyframes wingFlutterRight {
-    0%, 100% { transform: translateX(0) scaleX(1); }
-    50% { transform: translateX(1px) scaleX(1.05); }
-}
 
 .booking-actions {
     display: flex;
@@ -1015,12 +975,8 @@ img {
     }
 
     .wreath-logo {
-        width: 45px;
-        height: 45px;
-    }
-
-    .curved-text {
-        font-size: 9px;
+        width: 80px;
+        height: auto;
     }
 
     .booking-actions {

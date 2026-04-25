@@ -17,87 +17,71 @@
         <div class="container">
             <div class="booking-bar-content">
                 <div class="property-logo-wreath">
-                    <svg class="wreath-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Circular text path -->
+                    <svg class="wreath-logo" viewBox="0 0 200 140" xmlns="http://www.w3.org/2000/svg">
                         <defs>
-                            <path id="curve" d="M 30,100 A 70,70 0 0,1 170,100" fill="transparent"/>
+                            <!-- Gradients for metallic effect -->
+                            <linearGradient id="silverGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f0f0f0;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#c0c0c0;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#a8a8a8;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="goldGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#C9A961;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+                            </linearGradient>
                         </defs>
 
-                        <!-- Main circle wreath -->
-                        <circle cx="100" cy="100" r="70" fill="none" stroke="#6B4E3D" stroke-width="1.5" opacity="0.3"/>
-
-                        <!-- Left side leaves -->
-                        <g class="leaves-left">
-                            <!-- Bottom left -->
-                            <ellipse cx="35" cy="130" rx="8" ry="15" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(-40 35 130)"/>
-                            <ellipse cx="28" cy="140" rx="7" ry="13" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(-50 28 140)"/>
-                            <ellipse cx="25" cy="152" rx="6" ry="12" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(-60 25 152)"/>
-
-                            <!-- Mid left -->
-                            <ellipse cx="30" cy="110" rx="8" ry="15" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(-25 30 110)"/>
-                            <ellipse cx="25" cy="95" rx="7" ry="14" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(-15 25 95)"/>
-                            <ellipse cx="28" cy="80" rx="8" ry="15" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(-5 28 80)"/>
-
-                            <!-- Top left -->
-                            <ellipse cx="38" cy="65" rx="7" ry="13" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(10 38 65)"/>
-                            <ellipse cx="52" cy="50" rx="8" ry="14" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(25 52 50)"/>
+                        <!-- Decorative Feather -->
+                        <g class="feather" transform="translate(20, 40)">
+                            <!-- Main feather shaft -->
+                            <path d="M 10,60 Q 15,30 20,10"
+                                  stroke="url(#silverGradient)" stroke-width="2" fill="none"/>
+                            <!-- Feather barbs - left side -->
+                            <path d="M 10,60 Q 5,55 8,50 Q 3,45 6,40 Q 1,35 4,30 Q 0,25 3,20 L 15,15"
+                                  fill="url(#silverGradient)" stroke="url(#goldGradient)" stroke-width="0.5"/>
+                            <!-- Feather barbs - right side -->
+                            <path d="M 20,10 L 25,15 Q 30,20 28,25 Q 33,30 30,35 Q 35,40 32,45 Q 37,50 34,55 Q 38,58 35,62"
+                                  fill="url(#goldGradient)" stroke="url(#goldGradient)" stroke-width="0.5"/>
+                            <!-- Feather details -->
+                            <path d="M 12,50 L 8,48 M 14,40 L 10,38 M 16,30 L 12,28 M 18,20 L 15,18"
+                                  stroke="#a8a8a8" stroke-width="0.5"/>
+                            <path d="M 22,18 L 26,16 M 24,28 L 28,26 M 26,38 L 30,36 M 28,48 L 32,46"
+                                  stroke="#b8860b" stroke-width="0.5"/>
                         </g>
 
-                        <!-- Right side leaves -->
-                        <g class="leaves-right">
-                            <!-- Bottom right -->
-                            <ellipse cx="165" cy="130" rx="8" ry="15" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(40 165 130)"/>
-                            <ellipse cx="172" cy="140" rx="7" ry="13" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(50 172 140)"/>
-                            <ellipse cx="175" cy="152" rx="6" ry="12" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(60 175 152)"/>
+                        <!-- Letter N -->
+                        <text x="75" y="85"
+                              font-family="'Cormorant Garamond', serif"
+                              font-size="70"
+                              font-weight="700"
+                              fill="url(#silverGradient)"
+                              stroke="#888"
+                              stroke-width="1">N</text>
 
-                            <!-- Mid right -->
-                            <ellipse cx="170" cy="110" rx="8" ry="15" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(25 170 110)"/>
-                            <ellipse cx="175" cy="95" rx="7" ry="14" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(15 175 95)"/>
-                            <ellipse cx="172" cy="80" rx="8" ry="15" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(5 172 80)"/>
+                        <!-- Letter C -->
+                        <text x="125" y="85"
+                              font-family="'Cormorant Garamond', serif"
+                              font-size="70"
+                              font-weight="700"
+                              fill="url(#goldGradient)"
+                              stroke="#b8860b"
+                              stroke-width="1">C</text>
 
-                            <!-- Top right -->
-                            <ellipse cx="162" cy="65" rx="7" ry="13" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(-10 162 65)"/>
-                            <ellipse cx="148" cy="50" rx="8" ry="14" fill="none" stroke="#6B4E3D" stroke-width="1.5" transform="rotate(-25 148 50)"/>
-                        </g>
+                        <!-- Curved underline accent -->
+                        <path d="M 60,95 Q 100,105 140,95"
+                              stroke="url(#goldGradient)"
+                              stroke-width="2"
+                              fill="none"/>
 
-                        <!-- Crown above wreath -->
-                        <g class="crown">
-                            <!-- Crown base -->
-                            <path d="M 70,30 L 75,20 L 80,30 L 85,18 L 90,30 L 95,20 L 100,30 L 105,20 L 110,30 L 115,18 L 120,30 L 125,20 L 130,30"
-                                  fill="none" stroke="#C9A961" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <!-- Crown top line -->
-                            <path d="M 70,30 L 130,30" stroke="#C9A961" stroke-width="2"/>
-                            <!-- Crown jewels -->
-                            <circle cx="85" cy="18" r="2" fill="#C9A961"/>
-                            <circle cx="100" cy="16" r="2.5" fill="#C9A961"/>
-                            <circle cx="115" cy="18" r="2" fill="#C9A961"/>
-                        </g>
-
-                        <!-- Curved text -->
-                        <text class="curved-text" fill="#6B4E3D">
-                            <textPath href="#curve" startOffset="50%" text-anchor="middle">
-                                Niyanksha Cottage
-                            </textPath>
-                        </text>
-
-                        <!-- Left wing -->
-                        <g class="wing-left" opacity="0.8">
-                            <path d="M 75,95 Q 65,90 60,95 Q 55,100 60,105 Q 65,100 70,100"
-                                  fill="none" stroke="#C9A961" stroke-width="1.5"/>
-                            <path d="M 73,98 Q 68,95 65,98 Q 62,100 65,103 Q 68,100 71,101"
-                                  fill="none" stroke="#C9A961" stroke-width="1"/>
-                        </g>
-
-                        <!-- Right wing -->
-                        <g class="wing-right" opacity="0.8">
-                            <path d="M 125,95 Q 135,90 140,95 Q 145,100 140,105 Q 135,100 130,100"
-                                  fill="none" stroke="#C9A961" stroke-width="1.5"/>
-                            <path d="M 127,98 Q 132,95 135,98 Q 138,100 135,103 Q 132,100 129,101"
-                                  fill="none" stroke="#C9A961" stroke-width="1"/>
-                        </g>
-
-                        <!-- Center initials with enhanced styling -->
-                        <text x="100" y="108" text-anchor="middle" fill="#6B4E3D" font-family="Cormorant Garamond, serif" font-size="32" font-weight="600" font-style="italic">NC</text>
+                        <!-- Text below -->
+                        <text x="100" y="120"
+                              text-anchor="middle"
+                              font-family="'Cormorant Garamond', serif"
+                              font-size="12"
+                              font-weight="400"
+                              fill="#6B4E3D"
+                              letter-spacing="2">NIYANKSHA</text>
                     </svg>
                 </div>
                 <div class="booking-actions">
