@@ -35,3 +35,4 @@ build/
 # Environment files (if you add any)
 .env
 .env.local
+.vercel
