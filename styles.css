@@ -419,13 +419,13 @@ img {
 .intro-text .lead {
     font-size: 1rem;
     color: var(--text-dark);
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     line-height: 1.8;
 }
 
 .intro-text p {
     font-size: 1rem;
-    color: var(--text-light);
+    color: var(--text-dark);
     margin-bottom: 20px;
     line-height: 1.8;
 }
@@ -1134,13 +1134,14 @@ img {
     }
 
     .intro-text .lead {
-        font-size: 0.95rem;
-        margin-bottom: 18px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+        line-height: 1.8;
     }
 
     .intro-text p {
-        font-size: 0.9rem;
-        line-height: 1.7;
+        font-size: 1rem;
+        line-height: 1.8;
     }
 
     .intro-section,
